@@ -3,22 +3,22 @@ import ProductItem from "@components/ProductItem";
 import "@styles/ProductList.scss";
 import useGetProducts from "../hooks/useGetProducts";
 
-const API = 'https://api.escuelajs.co/api/v1/products?limit=5&offset=1';
+const API = 'https://api.escuelajs.co/api/v1/products';
 
 const ProductList = () => {
   const products = useGetProducts(API);
 
   return (
-    <section className="main-container">
+    <div className="main-container">
       <div className="ProductList">
-      {
-        products.map(product => {
-        <ProductItem product={product} key={product.id} />
-        })
-      }
+          {products.map(product => (
+    				<ProductItem product={product} key={product.id}/>
+          ))}
       </div>
-    </section>
+    </div>
   );
 };
 
 export default ProductList;
+
+//solo de ejemplo ya que no es la mejor ofrma

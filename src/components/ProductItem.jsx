@@ -12,18 +12,19 @@ const ProductItem = ({ product }) => {
 
   return (
     <div className="ProductItem">
+      <p>Hola</p>
       <img
         src={product.images[0]}
-        alt={product.tittle}
+        alt={product.title}
       />
       <div className="product-info">
         <div>
           <p>${product.price}</p>
-          <p>{product.tittle}</p>
+          <p>{product.title}</p>
         </div>
-        <figure onClick={handleClick} >
+        {/* <figure onClick={handleClick} >
           <img src={addCart} alt="" />
-        </figure>
+        </figure> */}
       </div>
     </div>
   );

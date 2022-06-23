@@ -5,7 +5,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //importamos react: usamos el shoortcut (rafce)
 import React from 'react';
-import Login from '../containers/login';
+import Login from '../containers/Login';
 import Layout from '../containers/Layout';
 //importamos nuestros archivos de scss:
 import '../styles/global.css';
